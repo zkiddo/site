@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DM9 Soluções Empresariais</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div id="logos">
+      <img src="/assets/img/logo04.png" alt="Logo DM9" class="logodm9" id="scroll-to-about" style="cursor: pointer;"></div>
+
+    <div class="quebra01"><a href="https://www.c6bank.com.br/" target="_blank"><img src="/assets/img/logo01.png"
+          alt="C6 Bank" class="logoc6" style="cursor: pointer;"></a></div>
+
+    <button class="botaofale" id="scroll-to-contact">FALE CONOSCO</button>
+  </header>
+
+  <main>
+    <div class="texto-principal">
+    <h1>Conta empresarial com diversos benefícios para sua empresa!</h1>
+    <br>
+    <br>
+    <h2>Muitas vantagens para o seu negócio, custo ZERO para você.<br><br> Até 100 Boletos gratuitos tanto, PIX Gratuito e
+      Ilimitado.<br><br>
+      Adesão SEM CUSTO na nossa maquininha C6 pay, capital de giro para sua empresa e muito mais!</h2>
+    </div>
+    <section id="sobre">
+      <h3>Sobre</h3>
+      <p>Somos a DM9 Soluções Empresariais, fornecemos todo o suporte para que sua empresa tenha os melhores benefícios
+        disponíveis no mercado. Desde 2021 nossa equipe trabalha em parceria com o C6 Empresas com o objetivo de
+        facilitar a vida dos nossos clientes, com atendimento personalizado e com todo suporte necessário para o seu
+        negócio.</p>
+    </section>
+    
+    <section id="contato">
+      <h3>Entre em Contato</h3>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>O presente site foi criado por um parceiro e distribuidor de produtos do C6 Bank e as informações aqui citadas
+      são de total responsabilidade de seus criadores. Nenhuma informação é oficial do C6 Bank. Para mais informações
+      acesse o site do C6 Bank (www.c6bank.com.br) ou contate os nossos canais oficiais:</p>
+    <p>CENTRAL DE RELACIONAMENTO 24H</p>
+    <p>CHAT PARA CLIENTES C6 BANK: No app C6 Bank</p>
+    <p>CAPITAIS E REGIÕES METROPOLITANAS: (3003 6116)</p>
+    <p>DEMAIS LOCALIDADES: (0800 660 6116)</p>
+    <p>WHATSAPP: (11) 2832 6088</p>
+    <p>E-MAIL: faleconosco@c6bank.com.br</p>
+    <p>SAC 24H (0800 660 0060) OUVIDORIA 9h às 18h - Segunda a sexta, exceto feriados (0800 660 6060)</p>
+  </footer>
+  
+  <script>
+    document.getElementById('scroll-to-about').addEventListener('click', function () {
+      document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('scroll-to-contact').addEventListener('click', function () {
+      document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+
+</html>

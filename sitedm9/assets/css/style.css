@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+body {
+  background-image: url(/assets/img/bg-main.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+  background-color: #1f1e1ec4;
+  height: 80px;
+  display: flex;
+  justify-content: space-between; /* Espaçamento igual entre os elementos */
+  align-items: center; /* Centraliza verticalmente os itens */
+  
+}
+
+#logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.logodm9,
+.logoc6 {
+  max-width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+.botaofale {
+  color: white;
+  background-color: #474747;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: white;
+  padding: 10px;
+  width: 200px;
+  border-width: 3px;
+  font-size: medium;
+  text-align: center;
+}
+
+.botaofale:hover {
+  background-color: #020000d3;
+  transition-duration: 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row; /* Empilha os itens verticalmente em telas menores */
+    height: auto; /* Ajusta a altura automaticamente */
+    align-items: center;
+    gap: 5px;
+  }
+
+
+
+  .logodm9,
+  .logoc6 {
+    max-width: 150px; /
+  }
+
+  .botaofale {
+    width: 100%;
+    max-width: 150px;
+  }
+  
+}
+
+.texto-principal {
+  background-color: rgba(255, 228, 196, 0.822);
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 30px; /* Espaçamento interno */
+  margin: 20px auto; /* Centraliza o bloco horizontalmente */
+  max-width: 1000px; /* Largura máxima do container */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-align: center;
+}
+
+.texto-principal h1 {
+  font-size: 5rem; /* Tamanho do título principal */
+  margin-bottom: 10px;
+  color: #333; /* Cor do texto */
+}
+
+.texto-principal h2 {
+  font-size: 3rem; /* Tamanho do subtítulo */
+  color: #333; /* Cor do texto secundário */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
