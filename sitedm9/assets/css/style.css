@@ -33,9 +33,9 @@ header {
   background-color: #1f1e1ec4;
   height: 80px;
   display: flex;
-  justify-content: space-between; /* Espaçamento igual entre os elementos */
-  align-items: center; /* Centraliza verticalmente os itens */
-  
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 #logos {
@@ -70,11 +70,11 @@ header {
   transition-duration: 0.3s;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   header {
-    flex-direction: row; /* Empilha os itens verticalmente em telas menores */
-    height: auto; /* Ajusta a altura automaticamente */
+    flex-direction: row;
+    height: auto;
     align-items: center;
     gap: 5px;
   }
@@ -83,34 +83,273 @@ header {
 
   .logodm9,
   .logoc6 {
-    max-width: 150px; /
+    max-width: 150px;/
   }
 
   .botaofale {
     width: 100%;
     max-width: 150px;
   }
-  
+
 }
 
 .texto-principal {
-  background-color: rgba(255, 228, 196, 0.822);
-  border-radius: 20px; /* Bordas arredondadas */
-  padding: 30px; /* Espaçamento interno */
-  margin: 20px auto; /* Centraliza o bloco horizontalmente */
-  max-width: 1000px; /* Largura máxima do container */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  background-color: rgba(255, 255, 255, 0.822);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 150px auto;
+  max-width: 1000px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  margin-bottom: 200px;
+
 }
 
 .texto-principal h1 {
-  font-size: 5rem; /* Tamanho do título principal */
+  font-size: 5rem;
   margin-bottom: 10px;
-  color: #333; /* Cor do texto */
+  color: #333;
 }
 
 .texto-principal h2 {
-  font-size: 3rem; /* Tamanho do subtítulo */
-  color: #333; /* Cor do texto secundário */
+  font-size: 2.5rem;
+  color: #333;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+@media (max-width: 768px) {
+  .texto-principal {
+    padding: 20px;
+    margin: 10px;
+    max-width: 90%;
+  }
+
+  .texto-principal h1 {
+    font-size: 3rem;
+  }
+
+  .texto-principal h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto-principal {
+    padding: 15px;
+  }
+}
+
+.sobre-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Fundo claro com leve transparência */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  padding: 25px;
+  /* Espaçamento interno */
+  margin: 30px auto;
+  /* Centraliza o bloco horizontalmente */
+  margin-bottom: 150px;
+  max-width: 900px;
+  /* Largura máxima */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
+  text-align: justify;
+  /* Texto justificado */
+  word-wrap: break-word;
+  /* Garante quebra de palavras longas */
+}
+
+.sobre-container h3 {
+  font-size: 3rem;
+  /* Tamanho do título "Sobre" */
+  text-align: center;
+  /* Centraliza o título */
+  margin-bottom: 15px;
+  /* Espaçamento abaixo do título */
+  color: #ffffff;
+  /* Cor do texto do título */
+}
+
+.sobre-container h4 {
+  font-size: 2rem;
+  /* Tamanho do título "Sobre" */
+  text-align: center;
+  /* Centraliza o título */
+  margin-bottom: 15px;
+  /* Espaçamento abaixo do título */
+  color: #ffffff;
+  /* Cor do texto do título */
+}
+
+.sobre-container p {
+  font-size: 2.2rem;
+  /* Tamanho do texto do parágrafo */
+  line-height: 1.6;
+  /* Espaçamento entre as linhas */
+  color: #ffffff;
+  /* Cor do texto */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .sobre-container {
+    padding: 20px;
+    
+    margin: 20px;
+    
+    max-width: 90%;
+    
+  }
+
+  .sobre-container h3 {
+    font-size: 2.5rem;
+    
+  }
+
+  .sobre-container h4 {
+    font-size: 2rem;
+    /* Reduz o tamanho do título */
+  }
+
+  .sobre-container p {
+    font-size: 1.6rem;
+    /* Reduz o tamanho do texto */
+  }
+
+}
+
+/* Media query para telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+  .sobre-container {
+    padding: 15px;
+    /* Mais compacto em telas muito pequenas */
+  }
+
+  .sobre-container h3 {
+    font-size: 2.2rem;
+    /* Reduz ainda mais o tamanho do título */
+  }
+
+  .sobre-container h4 {
+    font-size: 1.8rem;
+    /* Reduz ainda mais o tamanho do título */
+  }
+
+  .sobre-container p {
+    font-size: 1.4rem;
+  }
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Fundo branco com leve opacidade */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  padding: 25px;
+  /* Espaçamento interno */
+  margin: 30px auto;
+  /* Margem superior/inferior e centralização horizontal */
+  max-width: 600px;
+  /* Largura máxima */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra sutil */
+  text-align: center;
+  /* Centralização do texto */
+}
+
+.form-container h3 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: #333;
+  /* Cor do título */
+}
+
+.form-container label {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  text-align: left;
+  /* Alinhamento à esquerda */
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  /* Preencher a largura do container */
+  padding: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  /* Espaçamento entre os campos */
+  border: 1px solid #ccc;
+  /* Borda fina */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  box-sizing: border-box;
+}
+
+.form-container button {
+  background-color: #474747;
+  /* Fundo do botão */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #333;
+  /* Cor mais escura ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .form-container h3 {
+    font-size: 2rem;
+  }
+
+  .form-container label {
+    font-size: 1.6rem;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 1.4rem;
+  }
+
+  .form-container button {
+    font-size: 1.6rem;
+  }
+}
+
+
+.footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.footer p:first-of-type {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 10px 0;
+  text-align: left;
 }
